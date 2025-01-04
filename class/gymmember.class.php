@@ -132,6 +132,9 @@ class GymMember extends CommonObject
 		"lastname" => array("type" => "varchar(128)", "label" => "Last Name", "enabled" => "1", 'position' => 0, 'notnull' => 1, "visible" => "1",),
 		"firstname" => array("type" => "varchar(128)", "label" => "First Name", "enabled" => "1", 'position' => 0, 'notnull' => 1, "visible" => "1",),
 		"gender" => array("type" => "varchar(128)", "label" => "Gender", "enabled" => "1", 'position' => 0, 'notnull' => 0, "visible" => "1",),
+		"birthdate" => array("type" => "date", "label" => "Birth Date", "enabled" => "1", 'position' => 0, 'notnull' => 0, "visible" => "1",),
+		"documentnumber" => array("type" => "varchar(128)", "label" => "Document Number", "enabled" => "1", 'position' => 0, 'notnull' => 0, "visible" => "1",),
+		"documenttype" => array("type" => "varchar(128)", "label" => "Document Type", "enabled" => "1", 'position' => 0, 'notnull' => 0, "visible" => "1",),
 	);
 	public $rowid;
 	public $ref;
@@ -154,6 +157,9 @@ class GymMember extends CommonObject
 	public $lastname;
 	public $firstname;
 	public $gender;
+	public $birthdate;
+	public $documentnumber;
+	public $documenttype;
 	// END MODULEBUILDER PROPERTIES
 
 

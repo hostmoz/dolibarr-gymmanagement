@@ -36,6 +36,9 @@ CREATE TABLE llx_gymmanagement_gymmember(
 	status integer NOT NULL, 
 	lastname varchar(128) NOT NULL, 
 	firstname varchar(128) NOT NULL, 
-	gender varchar(128)
+	gender varchar(128), 
+	birthdate date, 
+	documentnumber varchar(128), 
+	documenttype varchar(128)
 	-- END MODULEBUILDER FIELDS
 ) ENGINE=innodb;

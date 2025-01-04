@@ -1,0 +1,42 @@
+# Translation file
+
+#
+# Generic
+#
+
+# Module label 'ModuleGymManagementName'
+ModuleGymManagementName = GymManagement
+# Module description 'ModuleGymManagementDesc'
+ModuleGymManagementDesc = GymManagement description
+
+#
+# Admin page
+#
+GymManagementSetup = GymManagement setup
+Settings = Settings
+GymManagementSetupPage = GymManagement setup page
+NewSection=New section
+GYMMANAGEMENT_MYPARAM1 = My param 1
+GYMMANAGEMENT_MYPARAM1Tooltip = My param 1 tooltip
+GYMMANAGEMENT_MYPARAM2=My param 2
+GYMMANAGEMENT_MYPARAM2Tooltip=My param 2 tooltip
+
+
+#
+# About page
+#
+About = About
+GymManagementAbout = About GymManagement
+GymManagementAboutPage = GymManagement about page
+
+#
+# Sample page
+#
+GymManagementArea = Home GymManagement
+MyPageName = My page name
+
+#
+# Sample widget
+#
+MyWidget = My widget
+MyWidgetDescription = My widget description

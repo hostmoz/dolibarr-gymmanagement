@@ -323,6 +323,54 @@ class modGymManagement extends DolibarrModules
 
 
 
+		/* BEGIN MODULEBUILDER LEFTMENU GYMMEMBER */
+		$this->menu[$r++] = array(
+			'fk_menu' => 'fk_mainmenu=gymmanagement',
+			'type' => 'left',
+			'titre' => 'GymMember',
+			'prefix' => img_picto('', $this->picto, 'class="paddingright pictofixedwidth valignmiddle"'),
+			'mainmenu' => 'gymmanagement',
+			'leftmenu' => 'gymmember',
+			'url' => '/gymmanagement/gymmember_list.php',
+			'langs' => 'gymmanagement@gymmanagement',
+			'position' => 1000 + $r,
+			'enabled' => 'isModEnabled("gymmanagement")',
+			'perms' => '1',
+			'target' => '',
+			'user' => 2,
+			'object' => 'GymMember'
+		);
+		$this->menu[$r++] = array(
+			'fk_menu' => 'fk_mainmenu=gymmanagement,fk_leftmenu=gymmember',
+			'type' => 'left',
+			'titre' => 'List GymMember',
+			'mainmenu' => 'gymmanagement',
+			'leftmenu' => 'gymmanagement_gymmember_list',
+			'url' => '/gymmanagement/gymmember_list.php',
+			'langs' => 'gymmanagement@gymmanagement',
+			'position' => 1000 + $r,
+			'enabled' => 'isModEnabled("gymmanagement")',
+			'perms' => '1',
+			'target' => '',
+			'user' => 2,
+			'object' => 'GymMember'
+		);
+		$this->menu[$r++] = array(
+			'fk_menu' => 'fk_mainmenu=gymmanagement,fk_leftmenu=gymmember',
+			'type' => 'left',
+			'titre' => 'New GymMember',
+			'mainmenu' => 'gymmanagement',
+			'leftmenu' => 'gymmanagement_gymmember_new',
+			'url' => '/gymmanagement/gymmember_card.php?action=create',
+			'langs' => 'gymmanagement@gymmanagement',
+			'position' => 1000 + $r,
+			'enabled' => 'isModEnabled("gymmanagement")',
+			'perms' => '1',
+			'target' => '',
+			'user' => 2,
+			'object' => 'GymMember'
+		);
+		/* END MODULEBUILDER LEFTMENU GYMMEMBER */
 		/* BEGIN MODULEBUILDER LEFTMENU MYOBJECT */
 		/*
 		$this->menu[$r++]=array(
